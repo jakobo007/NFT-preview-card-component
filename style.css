@@ -1,0 +1,153 @@
+:root {
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Very-dark-blue-main-BG);
+    font-size: 18px;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+    
+}
+
+.wrapper {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 20px;
+}
+
+.img-top{
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-top  img{
+    width: 100%;
+    display: block;
+}
+
+.img-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--Cyan);
+    opacity: 0.5;
+    display: none;
+}
+
+.img-overlay img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-top:hover .img-overlay {
+    display: block;
+    cursor: pointer;
+}
+.equilibrium {
+    color: var(--White);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.equilibrium:hover {
+    color: var(--Cyan);
+}
+
+.box-text {
+    padding: 2rem 0;
+}
+
+.equi-text {
+    color: var(--Soft-blue);
+    font-weight: 300;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.eth {
+    display: flex;
+    align-items: center;
+}
+
+.eth p {
+    color: var(--Cyan);
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.days {
+    display: flex;
+}
+
+.days p {
+    color: var(--Soft-blue);
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+hr {
+    border-color: var(--Very-dark-blue-line);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.author img {
+    height: 35px;
+    width: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author p {
+    color: var(--Soft-blue);
+}
+
+.name {
+    color: var(--White);
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.name:hover {
+    color: var(--Cyan);
+}
